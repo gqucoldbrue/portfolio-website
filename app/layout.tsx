@@ -2,6 +2,14 @@ import React from 'react'
 import Link from 'next/link'
 import './globals.css'
 
+const navigation = [
+  { name: 'Home', href: '/' },
+  { name: 'Contents', href: '/contents' },
+  { name: 'Architecture', href: '/architecture' },
+  { name: 'Interior Design', href: '/interior-design' },
+  { name: 'Client Design', href: '/client-design' },
+]
+
 export default function RootLayout({
   children,
 }: {
@@ -9,20 +17,40 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
-        <nav className="bg-gray-800 text-white p-4">
-          <div className="container mx-auto flex justify-between items-center">
-            <Link href="/" className="text-2xl font-bold">GQu Web Design</Link>
-            <ul className="flex space-x-4">
-              <li><Link href="/" className="hover:text-gray-300">Home</Link></li>
-              <li><Link href="/contents" className="hover:text-gray-300">Contents</Link></li>
-              <li><Link href="/architecture" className="hover:text-gray-300">Architecture</Link></li>
-              <li><Link href="/interior-design" className="hover:text-gray-300">Interior Design</Link></li>
-              <li><Link href="/client-design" className="hover:text-gray-300">Client Design</Link></li>
+      <body className="min-h-screen flex flex-col">
+        <nav className="bg-gray-800 text-white p-4 sticky top-0 z-50 shadow-md">
+          <div className="container mx-auto flex flex-col sm:flex-row justify-between items-center gap-4">
+            <Link 
+              href="/" 
+              className="text-2xl font-bold hover:text-gray-300 transition-colors"
+            >
+              GQu Web Design
+            </Link>
+            
+            <ul className="flex flex-wrap justify-center gap-x-6 gap-y-2">
+              {navigation.map((item) => (
+                <li key={item.name}>
+                  <Link 
+                    href={item.href} 
+                    className="hover:text-gray-300 transition-colors whitespace-nowrap text-sm sm:text-base"
+                  >
+                    {item.name}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
         </nav>
-        <main>{children}</main>
+
+        <main className="flex-grow">
+          {children}
+        </main>
+
+        <footer className="bg-gray-800 text-white py-6 mt-auto">
+          <div className="container mx-auto px-4 text-center">
+            <p>&copy; {new Date().getFullYear()} GQu Web Design. All rights reserved.</p>
+          </div>
+        </footer>
       </body>
     </html>
   )

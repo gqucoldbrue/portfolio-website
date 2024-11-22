@@ -1,0 +1,87 @@
+1. Error: Deployment not ready. Currently: ● Error.
+2. From "npm run build" 
+Warning: Your PostCSS configuration defines a field which is not supported (`content`). Please remove this configuration value.
+ ✓ Creating an optimized production build
+ ✓ Compiled successfully
+   Linting and checking validity of types  .Failed to compile.
+
+./app/components/app-layout.tsx:35:3
+Type error: Declaration or statement expected.
+
+  33 |       </footer>
+  34 |     </div>
+> 35 |   )
+     |   ^
+  36 | }
+
+3. {
+  "name": "your-portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "debug": "^4.3.1",
+    "glob": "^9.0.0",
+    "lru-cache": "^11.0.2",
+    "next": "^13.4.19",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "rimraf": "^4.0.0",
+    "uuid": "^7.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.5.7",
+    "@types/react": "^18.2.21",
+    "@types/react-dom": "^18.2.7",
+    "autoprefixer": "^10.4.15",
+    "postcss": "^8.4.28",
+    "tailwindcss": "^3.3.3",
+    "typescript": "^5.2.2"
+  }
+}
+
+
+4. /** @type {import('next').NextConfig} */
+const nextConfig = {
+  reactStrictMode: true,
+  swcMinify: true,
+}
+
+module.exports = nextConfig
+
+5. c:\Users\Me\Documents\JS Projects\portfolio-website>dir /b
+.gitignore
+.next
+.vercel
+app
+app-layout-v2
+app-layout-v3
+blank
+client-page-v3
+components
+homepage-v2
+homepage-v3
+homepage-v4
+interior-design-v3
+lib
+my-app
+next-env.d.ts
+next.config
+next.config.js
+node_modules
+old-homepage
+package-lock.json
+package.json
+postcss.config.js
+public
+README.md
+tailwind.config.js
+tsconfig.js
+tsconfig.json
+
+6. 

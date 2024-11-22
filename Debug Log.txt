@@ -1,0 +1,64 @@
+Vercel CLI 39.1.0
+> [debug] [2024-11-22T01:24:17.378Z] user supplied known subcommand: "deploy"
+> [debug] [2024-11-22T01:24:17.536Z] Found ".git\config" - detected "c:\Users\Me\Documents\JS Projects\portfolio-website" as repo root
+> [debug] [2024-11-22T01:24:17.589Z] Spinner invoked (Retrieving project…) with a 1000ms delay
+> [debug] [2024-11-22T01:24:17.601Z] #1 → GET https://api.vercel.com/teams/team_bEwziaDBRr1fjZlGOCo9J2pq?teamId=team_bEwziaDBRr1fjZlGOCo9J2pq
+> [debug] [2024-11-22T01:24:17.604Z] #2 → GET https://api.vercel.com/v9/projects/prj_hKN2nkCMhJoVwHBSUSd2vAb51K86?teamId=team_bEwziaDBRr1fjZlGOCo9J2pq
+> [debug] [2024-11-22T01:24:17.964Z] #1 ← 200 OK: sfo1::t8lz6-1732238658027-91f22384798a [363ms]
+> [debug] [2024-11-22T01:24:17.973Z] #2 ← 200 OK: sfo1::pcvzn-1732238658030-1ecf01e92848 [369ms]
+> [debug] [2024-11-22T01:24:18.174Z] Spinner invoked (Deploying gqucoldbrues-projects/portfolio-website) with a 0ms delay
+[client-debug] 2024-11-22T01:24:18.175Z Creating deployment...
+[client-debug] 2024-11-22T01:24:18.176Z Provided 'path' is a directory.
+[client-debug] 2024-11-22T01:24:18.179Z Found 24 rules in .vercelignore
+[client-debug] 2024-11-22T01:24:18.180Z Building file tree...
+[client-debug] 2024-11-22T01:24:18.190Z Found 54 files in the specified directory
+[client-debug] 2024-11-22T01:24:18.202Z Yielding a 'hashes-calculated' event with 45 hashes
+[client-debug] 2024-11-22T01:24:18.203Z Using provided API URL: https://api.vercel.com
+[client-debug] 2024-11-22T01:24:18.203Z Using provided user agent: vercel 39.1.0 node-v22.11.0 win32 (x64)
+[client-debug] 2024-11-22T01:24:18.206Z Setting platform version to harcoded value 2
+[client-debug] 2024-11-22T01:24:18.207Z Creating the deployment and starting upload...
+[client-debug] 2024-11-22T01:24:18.209Z Determining necessary files for upload...
+[client-debug] 2024-11-22T01:24:18.210Z Creating deployment
+[client-debug] 2024-11-22T01:24:18.213Z Sending deployment creation API request
+[client-debug] 2024-11-22T01:24:20.004Z Deployment response: {"alias":["portfolio-website-gqucoldbrue-gqucoldbrues-projects.vercel.app"],"aliasAssigned":false,"automaticAliases":["portfolio-website-gqucoldbrue-gqucoldbrues-projects.vercel.app"],"bootedAt":1732238659150,"buildingAt":1732238659150,"buildSkipped":false,"createdAt":1732238659150,"creator":{"uid":"kEfRASSx1NZ73eeksQHvoL4U","username":"gqucoldbrue"},"id":"dpl_3Th6b68Cfz3v8hKMKzj3St2NFvBM","name":"portfolio-website","meta":{"githubCommitAuthorName":"gqucoldbrue","githubCommitMessage":"Initial commit with proper .gitignore","githubCommitOrg":"gqucoldbrue","githubCommitRef":"main","githubCommitRepo":"portfolio-website","githubCommitSha":"1b4f9d954b701160939a4383784696f0f762d79d","githubDeployment":"1","githubOrg":"gqucoldbrue","githubRepo":"portfolio-website","gitDirty":"1"},"project":{"id":"prj_hKN2nkCMhJoVwHBSUSd2vAb51K86","name":"portfolio-website","framework":null},"public":false,"readyState":"QUEUED","regions":["iad1"],"source":"cli","status":"QUEUED","target":null,"team":{"id":"team_bEwziaDBRr1fjZlGOCo9J2pq","name":"gqucoldbrue's projects","slug":"gqucoldbrues-projects"},"type":"LAMBDAS","url":"portfolio-website-4r2srzx87-gqucoldbrues-projects.vercel.app","version":2,"previewCommentsEnabled":true,"lambdas":[{"id":"bld_87k733ynf","createdAt":1732238659718,"entrypoint":".","readyState":"READY","readyStateAt":1732238659718,"output":[]}],"aliasAssignedAt":null,"build":{"env":["CI","VERCEL","VERCEL_ENV","TURBO_REMOTE_ONLY","TURBO_RUN_SUMMARY","TURBO_DOWNLOAD_LOCAL_ENABLED","NX_DAEMON","TURBO_CACHE","VERCEL_URL","VERCEL_GIT_PROVIDER","VERCEL_GIT_PREVIOUS_SHA","VERCEL_GIT_REPO_SLUG","VERCEL_GIT_REPO_OWNER","VERCEL_GIT_REPO_ID","VERCEL_GIT_COMMIT_REF","VERCEL_GIT_COMMIT_SHA","VERCEL_GIT_COMMIT_MESSAGE","VERCEL_GIT_COMMIT_AUTHOR_LOGIN","VERCEL_GIT_COMMIT_AUTHOR_NAME","VERCEL_GIT_PULL_REQUEST_ID","TURBO_PLATFORM_ENV","VERCEL_DEPLOYMENT_ID","VERCEL_DISCOVER_FOLDER_SIZES","VERCEL_STORE_SOURCE_DEPLOYMENT_ON_CACHE","VERCEL_NEXT_BUNDLED_SERVER","VERCEL_EDGE_OTEL_COLLECTOR","VERCEL_SERVERLESS_FUNCTION_FAILOVER","VERCEL_IGNORE_BUILD_STEP_PACKAGE_MANAGER_DETECT","VERCEL_ENABLE_NPM_DEFAULT","VERCEL_NODE_BRIDGE_COMPRESS_MULTI_PAYLOADS","VERCEL_USE_BYTECODE_CACHING","VERCEL_RETRY_ON_MISSING_RESPONSE_BATON","VERCEL_COMPRESS_SERVERLESS_RESPONSE","VERCEL_SET_REQUESTED_AT_PRODUCTION_ON_DEPLOYMENT","VERCEL_ALLOW_NODEJS22","ENABLE_VC_BUILD","VERCEL_BUILD_OUTPUTS_EDGE_FUNCTION","VERCEL_EDGE_FUNCTIONS_REGIONAL_INVOCATION","VERCEL_EDGE_FUNCTIONS_EMBEDDED_SOURCEMAPS","VERCEL_EDGE_FUNCTIONS_STRICT_MODE","USE_OUTPUT_FOR_EDGE_FUNCTIONS","NEXT_PRIVATE_MULTI_PAYLOAD","VERCEL_RICHER_DEPLOYMENT_OUTPUTS","VERCEL_EDGE_SUSPENSE_CACHE","VERCEL_SERVERLESS_SUSPENSE_CACHE","VERCEL_BUILD_MONOREPO_SUPPORT","VERCEL_USE_EDGE_FUNCTIONS_BRIDGE_LATEST","VERCEL_ENABLE_NODE_COMPATIBILITY","VERCEL_FORCE_EDGE_FUNCTIONS_REDEPLOY","VERCEL_USE_ONLY_STREAMING_LAMBDA","VERCEL_USE_STREAMING_PRERENDER","VERCEL_DEPLOYMENT_ROUTES_BUILD_OUTPUT_V1","VERCEL_DEPLOYMENT_ROUTES_CLEAN","VERCEL_ENABLE_EXTENDED_FALLBACK_PAYLOAD","VERCEL_WAKE_UP_DEPLOYMENT"]},"builds":[],"createdIn":"sfo1","env":["VERCEL","VERCEL_ENV","TURBO_REMOTE_ONLY","TURBO_RUN_SUMMARY","TURBO_DOWNLOAD_LOCAL_ENABLED","NX_DAEMON","TURBO_CACHE","VERCEL_URL","VERCEL_GIT_PROVIDER","VERCEL_GIT_PREVIOUS_SHA","VERCEL_GIT_REPO_SLUG","VERCEL_GIT_REPO_OWNER","VERCEL_GIT_REPO_ID","VERCEL_GIT_COMMIT_REF","VERCEL_GIT_COMMIT_SHA","VERCEL_GIT_COMMIT_MESSAGE","VERCEL_GIT_COMMIT_AUTHOR_LOGIN","VERCEL_GIT_COMMIT_AUTHOR_NAME","VERCEL_GIT_PULL_REQUEST_ID","TURBO_PLATFORM_ENV","VERCEL_DEPLOYMENT_ID"],"functions":null,"inspectorUrl":"https://vercel.com/gqucoldbrues-projects/portfolio-website/3Th6b68Cfz3v8hKMKzj3St2NFvBM","isInConcurrentBuildsQueue":false,"isInSystemBuildsQueue":true,"ownerId":"team_bEwziaDBRr1fjZlGOCo9J2pq","plan":"hobby","projectId":"prj_hKN2nkCMhJoVwHBSUSd2vAb51K86","projectSettings":{"buildCommand":null,"devCommand":null,"framework":null,"commandForIgnoringBuildStep":null,"installCommand":null,"outputDirectory":null,"speedInsights":{"id":"pfgljCykEAEZfeQkwsFrlTHb5gg","hasData":false},"webAnalytics":{"id":"DkvxyeOmW22g9AMVnkuFh3xRY"}},"routes":null}
+[client-debug] 2024-11-22T01:24:20.014Z Deployment created with a notice:  To deploy to production, run `vercel --prod`
+[client-debug] 2024-11-22T01:24:20.028Z Yielding a 'notice' event
+[client-debug] 2024-11-22T01:24:20.029Z Deployment created
+[client-debug] 2024-11-22T01:24:20.030Z Yielding a 'created' event
+🔍  Inspect: https://vercel.com/gqucoldbrues-projects/portfolio-website/3Th6b68Cfz3v8hKMKzj3St2NFvBM [2s]
+✅  Preview: https://portfolio-website-4r2srzx87-gqucoldbrues-projects.vercel.app [2s]
+> [debug] [2024-11-22T01:24:20.034Z] Spinner invoked (Queued) with a 0ms delay
+[client-debug] 2024-11-22T01:24:20.036Z Waiting for deployment to be ready...
+[client-debug] 2024-11-22T01:24:20.037Z Waiting for builds and the deployment to complete...
+[client-debug] 2024-11-22T01:24:21.351Z Deployment state changed to BUILDING
+[client-debug] 2024-11-22T01:24:21.352Z Yielding a 'building' event
+> [debug] [2024-11-22T01:24:21.356Z] Spinner invoked (Building) with a 0ms delay
+[client-debug] 2024-11-22T01:24:46.034Z Yielding a 'error' event
+> [debug] [2024-11-22T01:24:46.044Z] Error: Error: Command "npm run build" exited with 1
+Error: Command "npm run build" exited with 1
+    at Now.handleDeploymentError (C:\Users\Me\AppData\Roaming\npm\node_modules\vercel\dist\index.js:124873:18)
+    at processDeployment (C:\Users\Me\AppData\Roaming\npm\node_modules\vercel\dist\index.js:124642:34)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Now.create (C:\Users\Me\AppData\Roaming\npm\node_modules\vercel\dist\index.js:124766:28)
+    at async createDeploy (C:\Users\Me\AppData\Roaming\npm\node_modules\vercel\dist\index.js:125013:12)
+    at async deploy_default (C:\Users\Me\AppData\Roaming\npm\node_modules\vercel\dist\index.js:125853:22)
+    at async main14 (C:\Users\Me\AppData\Roaming\npm\node_modules\vercel\dist\index.js:158065:19)
+
+[debug] [2024-11-22T01:24:46.594Z] Vercel CLI 39.1.0
+
+> [debug] [2024-11-22T01:24:46.923Z] Telemetry event tracked
+> [debug] [2024-11-22T01:24:46.947Z] Telemetry subprocess exited with code 0
+> [debug] [2024-11-22T01:24:46.949Z] Spawning C:\Users\Me\AppData\Roaming\npm\node_modules\vercel\dist\get-latest-worker.js
+> '[debug] [2024-11-22T01:24:47.019Z] Notifying parent we're ready
+> '[debug] [2024-11-22T01:24:47.029Z] Received message from parent: {
+  cacheFile: 'C:\\Users\\Me\\AppData\\Local\\com.vercel.cli\\Cache\\package-updates\\vercel-latest.json',
+  distTag: 'latest',
+  name: 'vercel',
+  updateCheckInterval: 86400000
+}
+> '[debug] [2024-11-22T01:24:47.029Z] Disconnecting from parent
+> '[debug] [2024-11-22T01:24:47.033Z] Checking lock file: C:\Users\Me\AppData\Local\com.vercel.cli\Cache\package-updates\vercel-latest.lock
+> '[debug] [2024-11-22T01:24:47.035Z] Found lock file with pid: 14044
+> '[debug] [2024-11-22T01:24:47.036Z] Resetting lock file: Error: kill ESRCH
+> '[debug] [2024-11-22T01:24:47.039Z] Initializing lock file with pid 17888
+> '[debug] [2024-11-22T01:24:47.042Z] Fetching https://registry.npmjs.org/-/package/vercel/dist-tags
