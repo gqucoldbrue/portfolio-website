@@ -18,7 +18,7 @@ export const PageLayout = ({ children }: { children: React.ReactNode }) => {
             href="/" 
             className="text-white text-2xl font-semibold hover:text-gray-300 transition-colors"
           >
-            Your Name
+            STUDIO GQ
           </Link>
           
           <nav>
@@ -44,7 +44,7 @@ export const PageLayout = ({ children }: { children: React.ReactNode }) => {
 
       <footer className="bg-black bg-opacity-80 backdrop-filter backdrop-blur-lg text-white py-6 rounded-t-lg">
         <div className="container mx-auto px-4 text-center">
-          <p>&copy; {new Date().getFullYear()} Your Name. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} STUDIO GQ. All rights reserved.</p>
         </div>
       </footer>
     </div>

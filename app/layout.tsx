@@ -24,7 +24,7 @@ export default function RootLayout({
               href="/" 
               className="text-2xl font-bold hover:text-gray-300 transition-colors"
             >
-              GQu Web Design
+              STUDIO GQ Design
             </Link>
             
             <ul className="flex flex-wrap justify-center gap-x-6 gap-y-2">
@@ -48,7 +48,7 @@ export default function RootLayout({
 
         <footer className="bg-gray-800 text-white py-6 mt-auto">
           <div className="container mx-auto px-4 text-center">
-            <p>&copy; {new Date().getFullYear()} GQu Web Design. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} STUDIO GQ Design. All rights reserved.</p>
           </div>
         </footer>
       </body>

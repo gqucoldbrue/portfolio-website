@@ -15,25 +15,19 @@ export default function HomePage() {
   const projects: Project[] = [
     {
       title: "Architect Portfolio",
-      desc: "Minimalist design for a renowned architect",
+      desc: "Contemporary and Modern Design",
       imageHeight: 200,
       imageWidth: 250
     },
     {
-      title: "Graphic Designer Showcase",
-      desc: "Bold and colorful portfolio for a graphic artist",
+      title: "Web Design Showcase",
+      desc: "WordPress, Lead Capture and Landing Page Design",
       imageHeight: 200,
       imageWidth: 250
     },
     {
-      title: "Fashion Designer Lookbook",
-      desc: "Elegant and responsive design for a fashion brand",
-      imageHeight: 200,
-      imageWidth: 250
-    },
-    {
-      title: "Model Portfolio",
-      desc: "Sleek and modern showcase for a professional model",
+      title: "Interior Design Showcase",
+      desc: "Contemporary home feature design",
       imageHeight: 200,
       imageWidth: 250
     }
@@ -112,7 +106,7 @@ export default function HomePage() {
                 <p>
                   specializing in aesthetically pristine digital experiences 
                   for creative professionals, with a keen eye for design and technical accents. 
-                  your creative commercial vision comes to life through conciselyy executed code and captivating visuals.
+                  your creative commercial vision comes to life through concisely executed code and captivating visuals.
                 </p>
                 <p>
                   my expertise derives from various creative fields, allowing for insightful solutions 
