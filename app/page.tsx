@@ -45,12 +45,12 @@ export default function HomePage() {
         {/* Hero Section */}
         <section id="home" className="bg-gradient-to-br from-yellow-300 to-yellow-400 py-20 rounded-b-lg">
           <div className="container mx-auto flex flex-col md:flex-row items-center justify-between px-4 gap-8">
-            <div className="bg-white bg-opacity-20 backdrop-filter backdrop-blur-lg rounded-lg p-8 w-full md:w-auto">
+            <div className="bg-white bg-opacity-20 backdrop-filter backdrop-blur-lg rounded-lg p-4 w-full md:w-auto">
               <h1 className="text-4xl md:text-5xl font-bold text-black mb-4">
-                Web Developer & Designer
+                web developer & designer
               </h1>
               <p className="text-lg md:text-xl text-gray-800">
-                Crafting digital experiences for creative professionals
+                digital solutions for creative professionals
               </p>
             </div>
             <div className="relative">
@@ -110,14 +110,14 @@ export default function HomePage() {
             <div className="bg-white bg-opacity-20 backdrop-filter backdrop-blur-lg rounded-lg p-8 text-white">
               <div className="prose prose-lg prose-invert max-w-none space-y-4">
                 <p>
-                  As a web developer and designer, I specialize in creating stunning digital experiences 
-                  for creative professionals. With a keen eye for design and a strong technical background, 
-                  I bring visions to life through clean code and captivating visuals.
+                  specializing in aesthetically pristine digital experiences 
+                  for creative professionals, with a keen eye for design and technical accents. 
+                  your creative commercial vision comes to life through conciselyy executed code and captivating visuals.
                 </p>
                 <p>
-                  My expertise spans across various creative fields, allowing me to craft tailored solutions 
-                  for architects, graphic designers, fashion designers, and models. Each project is an 
-                  opportunity to push the boundaries of digital design and create something truly unique.
+                  my expertise derives from various creative fields, allowing for insightful solutions 
+                  for service professionals in the finance, construction and media industries. each project is an 
+                  opportunity to showcase unique digital design and cutting-edge functionality.
                 </p>
               </div>
             </div>
