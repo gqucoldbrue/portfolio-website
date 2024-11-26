@@ -4,7 +4,6 @@ import './globals.css'
 
 const navigation = [
   { name: 'Home', href: '/' },
-  { name: 'Contents', href: '/contents' },
   { name: 'Architecture', href: '/architecture' },
   { name: 'Interior Design', href: '/interior-design' },
   { name: 'Client Design', href: '/client-design' },

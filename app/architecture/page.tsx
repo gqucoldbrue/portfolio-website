@@ -3,9 +3,8 @@ import Image from 'next/image'
 
 export default function Architecture() {
   const projects = [
-    { title: 'Modern Skyscraper', description: 'A sleek, sustainable skyscraper design for urban environments.' },
-    { title: 'Eco-Friendly Home', description: 'An innovative residential design focusing on sustainability and energy efficiency.' },
-    { title: 'Cultural Center', description: 'A multi-functional space designed to celebrate and showcase local culture.' },
+    { title: 'Modern Multi-Unit Historic Residence', description: 'A modern iteration of classical styling that combines urban sustaiable elements with cues from the 19th century.' },
+    { title: 'Eco-Friendly Modular Home', description: 'An innovative residential design focusing on sustainability and energy efficiency.' },
   ]
 
   return (
