@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export default function WebDesignShowcase() {
   const services = [
-    { name: 'VCO Max', image: '/placeholder.svg' },
+    { name: 'Health Profile Services', image: '/Health-Mock-Site.png' },
     { name: 'Microbiome Test Kit', image: '/placeholder.svg' },
     { name: 'Full Genome Sequencing', image: '/placeholder.svg' },
     { name: 'Continuous Glucose Monitoring', image: '/placeholder.svg' },
