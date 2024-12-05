@@ -1,13 +1,38 @@
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function WebDesignShowcase() {
   const services = [
-    { name: 'Health Profile Services', image: '/Health-Mock-Site.png' },
-    { name: 'Microbiome Test Kit', image: '/placeholder.svg' },
-    { name: 'Full Genome Sequencing', image: '/placeholder.svg' },
-    { name: 'Continuous Glucose Monitoring', image: '/placeholder.svg' },
-    { name: 'Biomarker Testing', image: '/placeholder.svg' },
-    { name: 'Cell Cancer Test', image: '/placeholder.svg' },
+    { 
+      name: 'Health Profile Services', 
+      image: '/Health-Mock-Site.png',
+      href: 'https://health-mock-site.vercel.app'  // Add href property
+    },
+    { 
+      name: 'Dog Wellness and Accessories ', 
+      image: '/placeholder.svg',
+      href: '/microbiome'
+    },
+    { 
+      name: 'Lifestyle Magazine', 
+      image: '/placeholder.svg',
+      href: '/genome'
+    },
+    { 
+      name: 'Continuous Glucose Monitoring', 
+      image: '/placeholder.svg',
+      href: '/glucose'
+    },
+    { 
+      name: 'Biomarker Testing', 
+      image: '/placeholder.svg',
+      href: '/biomarker'
+    },
+    { 
+      name: 'Cell Cancer Test', 
+      image: '/placeholder.svg',
+      href: '/cancer'
+    }
   ]
 
   return (
