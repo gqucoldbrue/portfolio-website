@@ -26,7 +26,7 @@ export default function HomePage() {
       desc: "WordPress, Lead Capture and Landing Page Design",
       imageHeight: 200,
       imageWidth: 250,
-      href: "/client-design"
+      href: "/web-design-showcase"
     },
     {
       title: "Interior Design Showcase",
