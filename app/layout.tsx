@@ -17,13 +17,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="min-h-screen flex flex-col bg-gradient-to-br from-gray-100 to-gray-200">
-        <header className="bg-black bg-opacity-80 backdrop-filter backdrop-blur-lg p-4 rounded-b-lg sticky top-0 z-50">
+        <header className="bg-black bg-opacity-95 backdrop-filter backdrop-blur-lg p-4 rounded-b-lg sticky top-0 z-50">
           <div className="container mx-auto flex flex-col sm:flex-row justify-between items-center gap-4">
             <Link 
               href="/" 
               className="text-2xl font-bold text-white hover:text-gray-300 transition-colors"
             >
-              STUDIO GQ Design
+              ATELIER GQ STUDIO
             </Link>
             
             <nav>
@@ -49,7 +49,7 @@ export default function RootLayout({
 
         <footer className="bg-black bg-opacity-80 backdrop-filter backdrop-blur-lg text-white py-6 rounded-t-lg mt-8">
           <div className="container mx-auto px-4 text-center">
-            <p>&copy; {new Date().getFullYear()} STUDIO GQ Design. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} ATELIER GQ STUDIO. All rights reserved.</p>
           </div>
         </footer>
       </body>
