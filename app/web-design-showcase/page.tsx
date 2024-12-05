@@ -3,7 +3,6 @@ import Image from 'next/image'
 export default function WebDesignShowcase() {
   const services = [
     { name: 'Health Profile Services', image: '/Health-Mock-Site.png' },
-    <a href="https://health-mock-site.vercel.app"> Health Profile Services </a>
     { name: 'Microbiome Test Kit', image: '/placeholder.svg' },
     { name: 'Full Genome Sequencing', image: '/placeholder.svg' },
     { name: 'Continuous Glucose Monitoring', image: '/placeholder.svg' },
