@@ -52,7 +52,7 @@ export default function HomePage() {
           </div>
           <div className="relative">
             <Image
-              src="/placeholder.svg"
+              src="/GQ-Profile-Avatar.png"
               alt="Profile"
               width={300}
               height={300}
