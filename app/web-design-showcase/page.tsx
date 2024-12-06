@@ -3,22 +3,25 @@ import Link from 'next/link'
 
 export default function WebDesignShowcase() {
   const services = [
-    { 
-      name: 'Health Profile Services', 
-      image:'/Health-Mock-Site.png',
-      href: 'https://health-mock-site.vercel.app'  // Add href property
-      isExternal: true
+    {
+      name: 'Health Profile Services',
+      image: '/Health-Mock-Site.png',
+      href: 'https://health-mock-site.vercel.app',
+      isExternal: true    // Make sure there's a comma after each property except the last one
     },
-    { 
-      name: 'Dog Wellness', 
+    {
+      name: 'Dog Wellness',
       image: '/placeholder.svg',
-      href: '/dogwellness'
+      href: '/dogwellness',
+      isExternal: false
     },
-    { 
-      name: 'Lifestyle Magazine', 
-      image:'/Le-Magazine-Mock-Cover.png',
-      href: '/lemagazine'
+    {
+      name: 'Lifestyle Magazine',
+      image: '/Le-Magazine-Mock-Cover.png',
+      href: '/lemagazine',
+      isExternal: false
     }
+  ];
   ]
 
   return (
