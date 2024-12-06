@@ -1,5 +1,32 @@
+interface Service {
+  name: string;
+  image: string;
+  href: string;
+  isExternal: boolean;
+}
+
+interface ServiceCardProps {
+  service: Service;
+}
+
+function ServiceCard({ service }: ServiceCardProps) {
+  return (
+    <div className="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-lg p-6 shadow-lg h-full">
+      <div className="relative w-full h-64 mb-4">
+        <img
+          src={service.image}
+          alt={service.name}
+          className="rounded object-cover w-full h-full"
+          loading="lazy"
+        />
+      </div>
+      <h2 className="text-xl font-semibold text-white">{service.name}</h2>
+    </div>
+  )
+}
+
 export default function WebDesignShowcase() {
-  const services = [
+  const services: Service[] = [
     {
       name: "Health Profile Services",
       image: "/Health-Mock-Site.PNG",
@@ -40,22 +67,6 @@ export default function WebDesignShowcase() {
           ))}
         </div>
       </div>
-    </div>
-  )
-}
-
-function ServiceCard({ service }) {
-  return (
-    <div className="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-lg p-6 shadow-lg h-full">
-      <div className="relative w-full h-64 mb-4">
-        <img
-          src={service.image}
-          alt={service.name}
-          className="rounded object-cover w-full h-full"
-          loading="lazy"
-        />
-      </div>
-      <h2 className="text-xl font-semibold text-white">{service.name}</h2>
     </div>
   )
 }
