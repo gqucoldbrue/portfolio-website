@@ -11,16 +11,16 @@ interface ServiceCardProps {
 
 function ServiceCard({ service }: ServiceCardProps) {
   return (
-    <div className="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-lg p-6 shadow-lg h-full">
-      <div className="relative w-full h-64 mb-4">
+    <div className="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-lg p-6 shadow-lg h-full flex flex-col">
+      <div className="relative w-full mb-4">
         <img
           src={service.image}
           alt={service.name}
-          className="rounded object-cover w-full h-full"
+          className="rounded w-full h-auto max-h-48 object-contain"
           loading="lazy"
         />
       </div>
-      <h2 className="text-xl font-semibold text-white">{service.name}</h2>
+      <h2 className="text-xl font-semibold text-white mt-auto">{service.name}</h2>
     </div>
   )
 }
@@ -59,7 +59,7 @@ export default function WebDesignShowcase() {
                 href={service.href}
                 target={service.isExternal ? "_blank" : undefined}
                 rel={service.isExternal ? "noopener noreferrer" : undefined}
-                className="block"
+                className="block h-full"
               >
                 <ServiceCard service={service} />
               </a>
