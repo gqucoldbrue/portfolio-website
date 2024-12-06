@@ -12,12 +12,12 @@ export default function WebDesignShowcase() {
     { 
       name: 'Dog Wellness', 
       image: '/placeholder.svg',
-      href: '/microbiome'
+      href: '/dogwellness'
     },
     { 
       name: 'Lifestyle Magazine', 
-      image: '/placeholder.svg',
-      href: '/genome'
+      image: require('/Le-Magazine-Mock-Cover.png').default,
+      href: '/lemagazine'
     }
   ]
 
@@ -25,7 +25,7 @@ export default function WebDesignShowcase() {
     <div className="min-h-screen bg-gradient-to-br from-blue-900 to-purple-500">
       <div className="container mx-auto px-4 py-12">
         <h1 className="text-4xl font-bold mb-8 text-white">Web Design Showcase</h1>
-        <p className="text-xl mb-12 text-blue-100">A showcase of client website designs and digital solutions.</p>
+        <p className="text-xl mb-12 text-blue-100">A showcase of template website designs and digital solutions.</p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <div key={index} className="transform transition-transform duration-300 hover:scale-105">
