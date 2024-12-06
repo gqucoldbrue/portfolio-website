@@ -23,7 +23,7 @@ export default function RootLayout({
               href="/" 
               className="text-2xl font-bold text-white hover:text-gray-300 transition-colors"
             >
-              ATELIER GQ STUDIO
+              atelier gq studio
             </Link>
             
             <nav>
