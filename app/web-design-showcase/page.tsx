@@ -5,11 +5,12 @@ export default function WebDesignShowcase() {
   const services = [
     { 
       name: 'Health Profile Services', 
-      image: '/Health-Mock-Site.png',
+      image: require('/public/Health-Mock-Site.png').default,
       href: 'https://health-mock-site.vercel.app'  // Add href property
+      isExternal: true
     },
     { 
-      name: 'Dog Wellness and Accessories ', 
+      name: 'Dog Wellness', 
       image: '/placeholder.svg',
       href: '/microbiome'
     },
