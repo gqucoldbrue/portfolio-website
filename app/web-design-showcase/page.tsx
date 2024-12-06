@@ -7,7 +7,7 @@ export default function WebDesignShowcase() {
       name: 'Health Profile Services',
       image: '/Health-Mock-Site.png',
       href: 'https://health-mock-site.vercel.app',
-      isExternal: true    // Make sure there's a comma after each property except the last one
+      isExternal: true
     },
     {
       name: 'Dog Wellness',
@@ -22,7 +22,7 @@ export default function WebDesignShowcase() {
       isExternal: false
     }
   ];
-  ]
+  
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-900 to-purple-500">
