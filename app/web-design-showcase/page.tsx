@@ -18,21 +18,6 @@ export default function WebDesignShowcase() {
       name: 'Lifestyle Magazine', 
       image: '/placeholder.svg',
       href: '/genome'
-    },
-    { 
-      name: 'Continuous Glucose Monitoring', 
-      image: '/placeholder.svg',
-      href: '/glucose'
-    },
-    { 
-      name: 'Biomarker Testing', 
-      image: '/placeholder.svg',
-      href: '/biomarker'
-    },
-    { 
-      name: 'Cell Cancer Test', 
-      image: '/placeholder.svg',
-      href: '/cancer'
     }
   ]
 
