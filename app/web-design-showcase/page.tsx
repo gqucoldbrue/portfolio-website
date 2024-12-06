@@ -1,7 +1,29 @@
-import Image from 'next/image'
-import Link from 'next/link'
+import React from 'react';
 
-export default function WebDesignShowcase() {
+const ServiceCard = ({ name, image, href, isExternal }) => {
+  return (
+    <div className="rounded-2xl overflow-hidden bg-purple-100/20 backdrop-blur-sm p-6 transition-transform hover:scale-105">
+      <a 
+        href={href} 
+        target={isExternal ? "_blank" : undefined}
+        rel={isExternal ? "noopener noreferrer" : undefined}
+        className="block h-full no-underline"
+      >
+        <div className="relative w-full aspect-[4/3] rounded-lg overflow-hidden mb-4">
+          <img
+            src={image}
+            alt={name}
+            className="object-cover w-full h-full"
+          />
+        </div>
+        <h2 className="text-2xl font-semibold text-white">{name}</h2>
+      </a>
+    </div>
+  );
+};
+
+// Example implementation of the services grid
+const ServiceShowcase = () => {
   const services = [
     {
       name: "Health Profile Services",
@@ -10,42 +32,29 @@ export default function WebDesignShowcase() {
       isExternal: true
     },
     {
-      name: 'Dog Wellness',
-      image: '/placeholder.svg',
-      href: '/dogwellness',
+      name: "Dog Wellness",
+      image: "/placeholder.svg",
+      href: "/dogwellness",
       isExternal: false
     },
     {
-      name: 'Lifestyle Magazine',
-      image: '/Le-Magazine-Mock-Cover.PNG',
-      href: '/lemagazine',
+      name: "Lifestyle Magazine",
+      image: "/Le-Magazine-Mock-Cover.PNG",
+      href: "/lemagazine",
       isExternal: false
     }
   ];
-  
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-900 to-purple-500">
-      <div className="container mx-auto px-4 py-12">
-        <h1 className="text-4xl font-bold mb-8 text-white">Web Design Showcase</h1>
-        <p className="text-xl mb-12 text-blue-100">Template websites for digital solutions - your idea goes here</p>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {services.map((service, index) => (
-            <div key={index} className="transform transition-transform duration-300 hover:scale-105">
-              <div className="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-lg p-6 shadow-lg">
-                <Image
-                  src={service.image}
-                  alt={service.name}
-                  width={400}
-                  height={300}
-                  className="w-full h-64 object-cover mb-4 rounded"
-                />
-                <h2 className="text-xl font-semibold text-white">{service.name}</h2>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {services.map((service) => (
+        <ServiceCard
+          key={service.name}
+          {...service}
+        />
+      ))}
     </div>
-  )
-}
+  );
+};
+
+export default ServiceShowcase;
