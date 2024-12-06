@@ -5,7 +5,7 @@ export default function WebDesignShowcase() {
   const services = [
     {
       name: 'Health Profile Services',
-      image: '/Health-Mock-Site.png',
+      image: '/Health-Mock-Site.PNG',
       href: 'https://health-mock-site.vercel.app',
       isExternal: true
     },
@@ -17,7 +17,7 @@ export default function WebDesignShowcase() {
     },
     {
       name: 'Lifestyle Magazine',
-      image: '/Le-Magazine-Mock-Cover.png',
+      image: '/Le-Magazine-Mock-Cover.PNG',
       href: '/lemagazine',
       isExternal: false
     }
