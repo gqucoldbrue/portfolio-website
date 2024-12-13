@@ -21,7 +21,7 @@ export default function HomePage() {
       imageHeight: 200,
       imageWidth: 250,
       href: "/architecture",
-      imageSrc: "/architect-portfolio.png"  // Add this line
+      imageSrc: "/image/placeholder.svg"  // Add this line
     },
     {
       title: "Web Design Showcase",
@@ -29,7 +29,7 @@ export default function HomePage() {
       imageHeight: 200,
       imageWidth: 250,
       href: "/web-design-showcase",
-      imageSrc: "/Le-Magazine-Mock-Cover.PNG"  // Add this line
+      imageSrc: "/image/Le-Magazine-Mock-Cover.PNG"  // Add this line
     },
     {
       title: "Interior Design Showcase",
@@ -37,7 +37,7 @@ export default function HomePage() {
       imageHeight: 200,
       imageWidth: 250,
       href: "/interior-design",
-      imageSrc: "/interior-design.png"  // Add this line
+      imageSrc: "/image/placeholder.svg"  // Add this line
     }
   ]
 
