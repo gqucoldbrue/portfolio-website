@@ -43,7 +43,7 @@ export default function WebDesignShowcase() {
       name: 'Lifestyle Magazine',
       image: '/Le-Magazine-Mock-Cover.PNG',
       href: 'https://mock-fasion-site-q44wvogj2-gqucoldbrues-projects.vercel.app',
-      isExternal: false
+      isExternal: true
     }
   ];
   
