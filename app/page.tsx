@@ -78,7 +78,7 @@ export default function HomePage() {
               >
                 <div className="relative">
                   <Image
-                    src={`/placeholder.svg`}
+                    src={`/Cover-Shopify-Store.png`}
                     alt={project.title}
                     width={project.imageWidth}
                     height={project.imageHeight}
