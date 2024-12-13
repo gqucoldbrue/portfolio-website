@@ -10,6 +10,7 @@ interface Project {
   imageHeight: number
   imageWidth: number
   href: string
+  imageSrc: string  // Add this line
 }
 
 export default function HomePage() {
@@ -80,13 +81,13 @@ export default function HomePage() {
                 className="group bg-white bg-opacity-20 backdrop-filter backdrop-blur-lg rounded-lg overflow-hidden shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl"
               >
                 <div className="relative">
-                  <Image
-                    src={`/Cover-Shopify-Store.png`}
-                    alt={project.title}
-                    width={project.imageWidth}
-                    height={project.imageHeight}
-                    className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110"
-                  />
+                <Image
+                  src={project.imageSrc}
+                  alt={project.title}
+                  width={project.imageWidth}
+                  height={project.imageHeight}
+                  className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110"
+/>
                 </div>
                 <div className="p-4">
                   <h3 className="text-xl font-semibold mb-2 text-white">
