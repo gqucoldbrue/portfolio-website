@@ -36,7 +36,7 @@ export default function WebDesignShowcase() {
     {
       name: 'Dog Wellness',
       image: '/Opti-Dog-Screenshot.PNG',
-      href: '/https://opti-dog-premium-care-site-attcib00c-gqucoldbrues-projects.vercel.app',
+      href: 'https://opti-dog-premium-care-site-attcib00c-gqucoldbrues-projects.vercel.app',
       isExternal: true
     },
     {
