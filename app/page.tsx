@@ -19,21 +19,24 @@ export default function HomePage() {
       desc: "Contemporary and Modern Design",
       imageHeight: 200,
       imageWidth: 250,
-      href: "/architecture"
+      href: "/architecture",
+      imageSrc: "/architect-portfolio.png"  // Add this line
     },
     {
       title: "Web Design Showcase",
       desc: "WordPress, Lead Capture and Landing Page Design",
       imageHeight: 200,
       imageWidth: 250,
-      href: "/web-design-showcase"
+      href: "/web-design-showcase",
+      imageSrc: "/Le-Magazine-Mock-Cover.PNG"  // Add this line
     },
     {
       title: "Interior Design Showcase",
       desc: "Contemporary home feature design",
       imageHeight: 200,
       imageWidth: 250,
-      href: "/interior-design"
+      href: "/interior-design",
+      imageSrc: "/interior-design.png"  // Add this line
     }
   ]
 
